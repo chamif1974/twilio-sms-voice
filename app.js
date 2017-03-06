@@ -71,12 +71,14 @@ app.get('/smssent',function(req,res){
 				contexts[contextIndex].context=response.context;
 			}
 			
+			if (response.intents[0].intent!=undefined){
 			var intent = response.intents[0].intent;
 			console.log(intent);
 			if(intent==="done"){
 				contexts.splice(contextIndex,1);
 			}
-			
+		}
+
 			var client = require('twilio')(
 			'ACcb05d8968a6f4d6a3bfd56811d696c19',
 			'6af780368fe871e2dab4955571a5256b'

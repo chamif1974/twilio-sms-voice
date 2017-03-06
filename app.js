@@ -71,7 +71,9 @@ app.get('/smssent',function(req,res){
 				contexts[contextIndex].context=response.context;
 			}
 			
-			if (response.intents[0].intent!=undefined){
+			var intents=response.intents[0];
+			
+			if (intents!=undefined){
 			var intent = response.intents[0].intent;
 			console.log(intent);
 			if(intent==="done"){

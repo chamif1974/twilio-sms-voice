@@ -30,9 +30,9 @@ app.get('/smssent',function(req,res){
 	//var number = req.query.From;
 	//var twilionumber = req.query.To;
 	
-	//var message = 'make appoinment';
-	//var number = '+94776186353';
-	//var twilionumber = '+1 512-865-4719';
+	var message = 'make appoinment';
+	var number = '+94768453840';
+	var twilionumber = '+1 512-865-4719';
 	
 	var context = null;
 	var index = 0;

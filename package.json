@@ -9,7 +9,7 @@
 		"express": "4.13.x",
 		"cfenv": "1.0.x",
 		"twilio":"*",
-    	"watson-developer-cloud": "^2.8.1"
+		"watson-developer-cloud": "^2.8.1"
 	},
 	"repository": {},
 	"engines": {

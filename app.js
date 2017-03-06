@@ -26,9 +26,9 @@ var appEnv = cfenv.getAppEnv();
 var contexts = [];
 
 app.get('/smssent',function(req,res){
-	var message = req.query.Body;
-	var number = req.query.From;
-	var twilionumber = req.query.To;
+	//var message = req.query.Body;
+	//var number = req.query.From;
+	//var twilionumber = req.query.To;
 	
 	//var message = 'make appoinment';
 	//var number = '+94776186353';

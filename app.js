@@ -25,6 +25,17 @@ var appEnv = cfenv.getAppEnv();
 
 var contexts = [];
 
+app.get('/callsent',function(req,res){
+	var watson = require('watson-developer-cloud');
+	var speech_to_text = watson.speech_to_text({
+  	username: '',
+  	password: s2t.password,
+  	url: s2t.url,
+	 version: 'v1'
+	});
+
+});
+
 app.get('/smssent',function(req,res){
 	var message = req.query.Body;
 	var number = req.query.From;
